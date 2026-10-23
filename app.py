@@ -92,7 +92,7 @@ def recommend(movie):
 movies_dict=pickle.load(open(os.path.join(BASE_DIR,"movie_dict.pkl"),"rb"))
 movies=pd.DataFrame(movies_dict)
 
-similarity=pickle.load(open(os.path.join(BASE_DIR,"similarity.pkl"),"rb"))
+similarity=pickle.load(open(os.path.join(BASE_DIR,"similarity_small.pkl"),"rb"))
 
 # --------------------------------------------------------
 # Streamlit UI
